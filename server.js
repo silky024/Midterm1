@@ -26,7 +26,9 @@ function onClientRequest(request, response)
     {
         result = player.find((player) =>{
             if(player.player_id === `${id[3]}`){
-                player.code = 1 
+                //player.code= {"code": 5, "msg":"player not found"}//testfor02
+
+                player.code = 1
                 return player
             }
         })
